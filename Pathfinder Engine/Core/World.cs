@@ -5,7 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Pathfinder_Engine.Core {
-    //A world is a collection of maps that link to each other.
+    /// <summary>
+    /// Contains a collection of linked maps
+    /// </summary>
     class World {
 
     }
