@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Pathfinder_Engine.UI.Character_Creation;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -56,6 +57,17 @@ namespace Pathfinder_Engine.UI {
 
         private void diceToolStripMenuItem_Click(object sender, EventArgs e) {
             UIGateway.SpawnDiceTool();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            var form2 = new Create();
+            form2.Show();
         }
     }
 }

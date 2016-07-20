@@ -26,6 +26,7 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.outputLevelOption = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
@@ -49,7 +50,8 @@
             this.toggleOutputToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.diceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.statusStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -57,6 +59,7 @@
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -66,9 +69,9 @@
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 539);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 540);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(784, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(894, 22);
             this.statusStrip1.TabIndex = 0;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -86,10 +89,18 @@
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.Location = new System.Drawing.Point(3, 3);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(770, 483);
+            this.groupBox1.Size = new System.Drawing.Size(880, 484);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Output";
+            // 
+            // panel2
+            // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel2.Location = new System.Drawing.Point(7, 44);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(760, 433);
+            this.panel2.TabIndex = 3;
             // 
             // outputLevelOption
             // 
@@ -123,7 +134,7 @@
             this.tabControl1.Multiline = true;
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(784, 515);
+            this.tabControl1.Size = new System.Drawing.Size(894, 516);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -133,7 +144,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(776, 489);
+            this.tabPage1.Size = new System.Drawing.Size(886, 490);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Scenarios";
             // 
@@ -151,7 +162,7 @@
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(770, 483);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(880, 484);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // panel1
@@ -161,7 +172,7 @@
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(3, 450);
+            this.panel1.Location = new System.Drawing.Point(3, 451);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(267, 30);
             this.panel1.TabIndex = 1;
@@ -214,7 +225,7 @@
             this.groupBox2.Location = new System.Drawing.Point(276, 3);
             this.groupBox2.Name = "groupBox2";
             this.tableLayoutPanel1.SetRowSpan(this.groupBox2, 2);
-            this.groupBox2.Size = new System.Drawing.Size(491, 477);
+            this.groupBox2.Size = new System.Drawing.Size(601, 478);
             this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Details";
@@ -226,7 +237,7 @@
             this.textBox2.Location = new System.Drawing.Point(3, 16);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(485, 458);
+            this.textBox2.Size = new System.Drawing.Size(595, 459);
             this.textBox2.TabIndex = 0;
             this.textBox2.Text = "Connects to a remote host.";
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
@@ -239,16 +250,18 @@
             "<Remote Scenario>"});
             this.listBox1.Location = new System.Drawing.Point(3, 3);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(267, 441);
+            this.listBox1.Size = new System.Drawing.Size(267, 442);
             this.listBox1.TabIndex = 6;
             // 
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.Transparent;
+            this.tabPage2.Controls.Add(this.button6);
+            this.tabPage2.Controls.Add(this.button5);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(776, 489);
+            this.tabPage2.Size = new System.Drawing.Size(886, 490);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Characters";
             // 
@@ -259,7 +272,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(776, 489);
+            this.tabPage3.Size = new System.Drawing.Size(886, 490);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Resource";
             // 
@@ -276,7 +289,7 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(776, 489);
+            this.tabPage4.Size = new System.Drawing.Size(886, 490);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Console";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -289,7 +302,7 @@
             this.toolsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(784, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(894, 24);
             this.menuStrip1.TabIndex = 4;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -310,7 +323,7 @@
             // toggleOutputToolStripMenuItem
             // 
             this.toggleOutputToolStripMenuItem.Name = "toggleOutputToolStripMenuItem";
-            this.toggleOutputToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.toggleOutputToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.toggleOutputToolStripMenuItem.Text = "Toggle Output";
             // 
             // toolsToolStripMenuItem
@@ -318,7 +331,7 @@
             this.toolsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.diceToolStripMenuItem});
             this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
-            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
+            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
             this.toolsToolStripMenuItem.Text = "Tools";
             // 
             // diceToolStripMenuItem
@@ -328,19 +341,31 @@
             this.diceToolStripMenuItem.Text = "Dice";
             this.diceToolStripMenuItem.Click += new System.EventHandler(this.diceToolStripMenuItem_Click);
             // 
-            // panel2
+            // button5
             // 
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel2.Location = new System.Drawing.Point(7, 44);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(760, 433);
-            this.panel2.TabIndex = 3;
+            this.button5.Location = new System.Drawing.Point(808, 6);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.TabIndex = 0;
+            this.button5.Text = "Upload";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(332, 6);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(217, 90);
+            this.button6.TabIndex = 1;
+            this.button6.Text = "Create Character";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 561);
+            this.ClientSize = new System.Drawing.Size(894, 562);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
@@ -359,6 +384,7 @@
             this.panel1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
@@ -397,5 +423,7 @@
         private System.Windows.Forms.TreeView treeView1;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button5;
     }
 }

@@ -1,0 +1,3 @@
+Idea - Instead of form, setup wizard to walk you through character creation, 
+       with each slide dedicated to each part of the setup, ie, slide for in depth look at races pro/cons, 
+       feats, starting items and gold...etc 
