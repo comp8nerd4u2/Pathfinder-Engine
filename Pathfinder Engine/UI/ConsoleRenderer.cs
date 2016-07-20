@@ -1,4 +1,7 @@
 ﻿using Pathfinder_Engine.Graphics;
+using SharpDX.Direct2D1;
+using SharpDX.DXGI;
+using SharpDX;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,11 +14,26 @@ namespace Pathfinder_Engine.UI {
     /// Handles rendering console to display panel
     /// </summary>
     class ConsoleRenderer : IDrawable {
-        Control controlRenderTarget;
+        Control control;
+        WindowRenderTarget target;
 
         public ConsoleRenderer(Control controlRenderTarget) {
-            this.controlRenderTarget = controlRenderTarget;
+            this.control = controlRenderTarget;
             controlRenderTarget.Paint += this.OnPaint;
+            RenderTargetProperties rtp = new RenderTargetProperties() {
+                DpiX = GraphicsManager.factory.DesktopDpi.Width,
+                DpiY = GraphicsManager.factory.DesktopDpi.Height,
+                MinLevel = FeatureLevel.Level_DEFAULT,
+                PixelFormat = new PixelFormat(Format.B8G8R8A8_UNorm, SharpDX.Direct2D1.AlphaMode.Unknown),
+                Type = RenderTargetType.Hardware,
+                Usage = RenderTargetUsage.None
+            };
+            HwndRenderTargetProperties hrtp = new HwndRenderTargetProperties() {
+                Hwnd = controlRenderTarget.Handle,
+                PixelSize = new Size2(controlRenderTarget.Width, controlRenderTarget.Height),
+                PresentOptions = PresentOptions.Immediately
+            };
+            target = new WindowRenderTarget(GraphicsManager.factory, rtp, hrtp);
         }
 
         private void OnPaint(object sender, PaintEventArgs e) {
@@ -23,7 +41,10 @@ namespace Pathfinder_Engine.UI {
         }
 
         public void Draw() {
-            throw new NotImplementedException();
+            Console.WriteLine("Drawing");
+            target.BeginDraw();
+            
+            target.EndDraw();
         }
     }
 }

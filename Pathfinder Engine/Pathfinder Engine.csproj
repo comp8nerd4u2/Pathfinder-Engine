@@ -53,7 +53,7 @@
     <Compile Include="Data\ISelfSerializable.cs" />
     <Compile Include="Data\TreeNode.cs" />
     <Compile Include="Graphics\Caret.cs" />
-    <Compile Include="Graphics\Graphics.cs" />
+    <Compile Include="Graphics\GraphicsManager.cs" />
     <Compile Include="Graphics\IComponent.cs" />
     <Compile Include="Graphics\IDrawable.cs" />
     <Compile Include="Program.cs" />

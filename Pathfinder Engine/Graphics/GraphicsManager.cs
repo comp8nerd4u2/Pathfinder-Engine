@@ -8,9 +8,10 @@ using System.Threading.Tasks;
 
 namespace Pathfinder_Engine.Graphics {
     class GraphicsManager {
+        public static ID2D1Factory factory;
 
         public static void Initialize() {
-            ID2D1Factory f = new ID2D1Factory(FactoryType.SingleThreaded, DebugLevel.None);
+            factory = new ID2D1Factory(FactoryType.SingleThreaded, DebugLevel.None);
         }
 
         public static void test() {

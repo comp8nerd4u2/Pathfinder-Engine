@@ -14,12 +14,8 @@ namespace Pathfinder_Engine.UI {
             InitializeComponent();
         }
 
-        private void tabPage2_Click(object sender, EventArgs e) {
-
-        }
-
         private void PathfinderEngineDashboard_Load(object sender, EventArgs e) {
-
+            
         }
 
         private void button2_Click(object sender, EventArgs e) {
@@ -52,6 +48,7 @@ namespace Pathfinder_Engine.UI {
 
         private void Dashboard_Load(object sender, EventArgs e) {
             outputLevelOption.SelectedItem = "Debug";
+            ConsoleRenderer cr = new ConsoleRenderer(consoleDisplay);
         }
 
         private void diceToolStripMenuItem_Click(object sender, EventArgs e) {

@@ -93,6 +93,9 @@
             // 
             // consoleDisplay
             // 
+            this.consoleDisplay.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.consoleDisplay.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.consoleDisplay.Location = new System.Drawing.Point(7, 44);
             this.consoleDisplay.Name = "consoleDisplay";
