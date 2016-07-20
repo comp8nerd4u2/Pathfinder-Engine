@@ -1,4 +1,5 @@
 ﻿using Pathfinder_Engine.Graphics;
+using SharpDX.Mathematics.Interop;
 using SharpDX.Direct2D1;
 using SharpDX.DXGI;
 using SharpDX;
@@ -43,7 +44,7 @@ namespace Pathfinder_Engine.UI {
         public void Draw() {
             Console.WriteLine("Drawing");
             target.BeginDraw();
-            
+            target.Clear(Color.Black.ToColor4());
             target.EndDraw();
         }
     }
