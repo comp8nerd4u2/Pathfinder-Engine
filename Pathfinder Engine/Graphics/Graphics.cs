@@ -6,6 +6,11 @@ using System.Threading.Tasks;
 
 namespace Pathfinder_Engine.Graphics {
     class Graphics {
+
+        public static void Initialize() {
+
+        }
+
         public static void test() {
 
         }

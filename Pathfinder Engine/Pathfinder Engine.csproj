@@ -59,6 +59,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Core\Scenario.cs" />
     <Compile Include="Core\World.cs" />
+    <Compile Include="UI\ConsoleRenderer.cs" />
     <Compile Include="UI\Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
