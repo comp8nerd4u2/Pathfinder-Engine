@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<CharacterObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Chen</Name>
+  <Class>Cleric</Class>
+  <Level>2</Level>
+  <Race>Nekomota</Race>
+  <Str>14</Str>
+  <Dex>10</Dex>
+  <Con>14</Con>
+  <Int>10</Int>
+  <Wis>18</Wis>
+  <Cha>10</Cha>
+</CharacterObject>

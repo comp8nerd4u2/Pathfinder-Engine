@@ -67,7 +67,9 @@ namespace Pathfinder_Engine.UI {
         private void button6_Click(object sender, EventArgs e)
         {
             var form2 = new Create();
-            form2.Show();
+            form2.ShowDialog();
+
+            button6.Top = button6.Top + 150;
         }
     }
 }

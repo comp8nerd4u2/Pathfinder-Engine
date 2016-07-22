@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<CharacterObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Ran</Name>
+  <Class>Sorcerer</Class>
+  <Level>8</Level>
+  <Race>Kitsune</Race>
+  <Str>10</Str>
+  <Dex>12</Dex>
+  <Con>10</Con>
+  <Int>18</Int>
+  <Wis>18</Wis>
+  <Cha>14</Cha>
+</CharacterObject>
