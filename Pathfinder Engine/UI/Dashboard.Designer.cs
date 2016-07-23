@@ -26,7 +26,7 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.consoleDisplay = new System.Windows.Forms.Panel();
             this.outputLevelOption = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
@@ -83,7 +83,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.panel2);
+            this.groupBox1.Controls.Add(this.consoleDisplay);
             this.groupBox1.Controls.Add(this.outputLevelOption);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -94,13 +94,16 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Output";
             // 
-            // panel2
+            // consoleDisplay
             // 
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel2.Location = new System.Drawing.Point(7, 44);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(760, 433);
-            this.panel2.TabIndex = 3;
+            this.consoleDisplay.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.consoleDisplay.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.consoleDisplay.Location = new System.Drawing.Point(7, 44);
+            this.consoleDisplay.Name = "consoleDisplay";
+            this.consoleDisplay.Size = new System.Drawing.Size(760, 433);
+            this.consoleDisplay.TabIndex = 3;
             // 
             // outputLevelOption
             // 
@@ -422,7 +425,7 @@
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.TreeView treeView1;
         private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel consoleDisplay;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;
     }
