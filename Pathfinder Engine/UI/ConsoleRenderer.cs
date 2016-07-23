@@ -45,6 +45,9 @@ namespace Pathfinder_Engine.UI {
             Console.WriteLine("Drawing");
             target.BeginDraw();
             target.Clear(Color.Black.ToColor4());
+            Ellipse e = new Ellipse(new Vector2(50, 50), 50, 50);
+            target.FillEllipse(e, new SolidColorBrush(target, Color.CornflowerBlue.ToColor4()));
+            //target.Dra
             target.EndDraw();
         }
     }

@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 namespace Pathfinder_Engine.UI {
     public partial class Dashboard : Form {
+        ConsoleRenderer cr;
         public Dashboard() {
             InitializeComponent();
         }
@@ -48,7 +49,7 @@ namespace Pathfinder_Engine.UI {
 
         private void Dashboard_Load(object sender, EventArgs e) {
             outputLevelOption.SelectedItem = "Debug";
-            ConsoleRenderer cr = new ConsoleRenderer(consoleDisplay);
+            cr = new ConsoleRenderer(consoleDisplay);
         }
 
         private void diceToolStripMenuItem_Click(object sender, EventArgs e) {
